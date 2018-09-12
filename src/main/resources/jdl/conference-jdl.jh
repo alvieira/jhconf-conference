@@ -9,8 +9,8 @@ entity Speaker {
 entity Session {
 	title String required,
     description Blob,
-	startDateTime ZonedDateTime required,
-    endDateTime ZonedDateTime required	
+	startDateTime Instant required,
+    endDateTime Instant required	
 }
 
 relationship ManyToMany {
